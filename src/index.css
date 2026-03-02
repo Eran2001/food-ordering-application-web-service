@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 45% 97%;
+    --foreground: 20 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 25% 12%;
+
+    --primary: 24 85% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 32 35% 91%;
+    --secondary-foreground: 20 25% 20%;
+
+    --muted: 30 20% 93%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 8 72% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 24 85% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 32 30% 96%;
+    --sidebar-foreground: 20 20% 20%;
+    --sidebar-primary: 24 85% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 30% 92%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 24 85% 48%;
+
+    --lanka-spice: 8 72% 42%;
+    --lanka-gold: 40 90% 55%;
+    --lanka-leaf: 145 40% 38%;
+  }
+
+  .dark {
+    --background: 20 25% 8%;
+    --foreground: 36 30% 92%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 36 30% 92%;
+
+    --popover: 20 20% 12%;
+    --popover-foreground: 36 30% 92%;
+
+    --primary: 24 85% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 36 30% 90%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 8 72% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 24 85% 52%;
+
+    --sidebar-background: 20 20% 10%;
+    --sidebar-foreground: 36 30% 90%;
+    --sidebar-primary: 24 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 15% 16%;
+    --sidebar-accent-foreground: 36 30% 90%;
+    --sidebar-border: 20 15% 18%;
+    --sidebar-ring: 24 85% 52%;
+
+    --lanka-spice: 8 72% 50%;
+    --lanka-gold: 40 90% 60%;
+    --lanka-leaf: 145 40% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'DM Sans', sans-serif;
+  }
+}
